@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>我的个人博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="site-title">我的个人博客</h1>
+        <nav class="site-nav">
+          <button type="button" class="nav-link" data-section="home">首页</button>
+          <button type="button" class="nav-link" data-section="about">关于我</button>
+          <button type="button" class="nav-link" data-section="contact">联系</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main container">
+      <section class="content">
+        <div class="section" id="section-home">
+          <h2 class="section-title">最新文章</h2>
+          <div class="posts" id="post-list"></div>
+        </div>
+
+        <div class="section hidden" id="section-about">
+          <h2 class="section-title">关于我</h2>
+          <p>
+            这里是个人简介区域，你可以简单介绍自己的背景、兴趣和目前在做的事情。
+          </p>
+          <p>
+            例如：我是一名前端开发者，喜欢探索新技术，也热爱写作和分享。
+          </p>
+        </div>
+
+        <div class="section hidden" id="section-contact">
+          <h2 class="section-title">联系我</h2>
+          <p>你可以通过以下方式联系我：</p>
+          <ul>
+            <li>邮箱：example@example.com</li>
+            <li>GitHub：@your-github</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <section class="sidebar-section">
+          <h3 class="sidebar-title">搜索文章</h3>
+          <input
+            type="search"
+            id="search-input"
+            class="search-input"
+            placeholder="搜索标题关键字"
+            aria-label="搜索文章"
+          />
+        </section>
+
+        <section class="sidebar-section">
+          <h3 class="sidebar-title">分类</h3>
+          <ul id="category-list" class="category-list"></ul>
+        </section>
+
+        <section class="sidebar-section">
+          <h3 class="sidebar-title">主题</h3>
+          <button type="button" id="theme-toggle" class="theme-toggle">
+            切换深色模式
+          </button>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="footer-year"></span> 我的个人博客 · 由 HTML, CSS 和 JavaScript 驱动</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
