@@ -188,6 +188,7 @@ body {
   font-size: 12px;
   border: 1px solid #e5e7eb;
   background-color: #f9fafb;
+  color: #4b5563;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s;
 }
@@ -274,8 +275,47 @@ body.dark .post-card:hover {
   border-color: #4b5563;
 }
 
+body.dark .post-title {
+  color: #e5e7eb;
+}
+
+body.dark .post-meta {
+  color: #9ca3af;
+}
+
 body.dark .post-excerpt {
   color: #d1d5db;
+}
+
+body.dark .sidebar-title {
+  color: #e5e7eb;
+}
+
+body.dark .site-title {
+  color: #f9fafb;
+}
+
+body.dark .search-input {
+  background-color: #020617;
+  border-color: #374151;
+  color: #e5e7eb;
+}
+
+body.dark .search-input::placeholder {
+  color: #6b7280;
+}
+
+body.dark .category-item {
+  background-color: #0b1120;
+  border-color: #4b5563;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+body.dark .category-item.active {
+  background-color: #4c6fff;
+  border-color: #4c6fff;
+  color: #ffffff;
 }
 
 body.dark .site-footer {
